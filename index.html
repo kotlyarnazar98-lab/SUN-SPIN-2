@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Gift Roulette</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="startScreen">
+  <h1>Добро пожаловать в Gift Roulette!</h1>
+  <button onclick="startGame()">Начать игру</button>
+</div>
 
+<div id="gameScreen" style="display:none;">
+  <h1>🎰 Рулетка подарков</h1>
+  <div id="rouletteButtons">
+    <button onclick="spinRoulette(100)">Рулетка за 100⭐</button>
+    <button onclick="spinRoulette(1500)">Рулетка за 1500⭐</button>
+    <button onclick="spinRoulette(10000)">Рулетка за 10000⭐</button>
+  </div>
+
+  <div class="roulette-container">
+    <div class="roulette-strip" id="rouletteStrip"></div>
+    <div class="roulette-frame"></div>
+  </div>
+
+  <p id="result"></p>
+
+  <h2>Инвентарь</h2>
+  <div id="inventory" class="inventory-container"></div>
+
+  <button onclick="simulateGift()">Пополнить через подарок</button>
+</div>
+
+<script src="roulette.js"></script>
+</body>
+</html>
