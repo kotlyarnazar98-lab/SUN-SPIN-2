@@ -5,7 +5,7 @@ const axios = require('axios');
 const app = express();
 app.use(bodyParser.json());
 
-const TELEGRAM_BOT_TOKEN = 'ВАШ_ТОКЕН';
+const TELEGRAM_BOT_TOKEN = '7985830491:AAETUsk-l-ktl9tsuI_KOASMx8M-XVKXEwk';
 const SPIDER_RELAYER = '@SpiderGiftRelayer';
 let userBalances = {}; // username → stars
 
